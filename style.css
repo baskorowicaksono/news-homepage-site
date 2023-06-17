@@ -1,0 +1,294 @@
+* {
+  max-width: 1440px;
+  max-height: 1024px;
+  padding: 10px 10px 0 10px;
+  background-color: hsl(36, 100%, 99%);
+  font-family: "Inter";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+header img {
+  width: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
+header nav {
+  font-weight: bold;
+}
+header nav a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: 400;
+  color: gray;
+}
+header nav a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+main .topContent {
+  display: flex;
+}
+main .topContent .featuredArticle {
+  display: flex;
+  flex-direction: column;
+}
+main .topContent .featuredArticle img {
+  width: 900px;
+  object-fit: cover;
+}
+main .topContent .featuredArticle .featuredArticleBottom {
+  display: flex;
+}
+main .topContent .featuredArticle .featuredArticleBottom .featuredArticleLeft {
+  width: 400px;
+}
+main .topContent .featuredArticle .featuredArticleBottom .featuredArticleLeft h1 {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 1.2;
+}
+main .topContent .featuredArticle .featuredArticleBottom .featuredArticleRight {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+main .topContent .featuredArticle .featuredArticleBottom .featuredArticleRight span {
+  font-weight: 400;
+  line-height: 1.8;
+  font-size: 18px;
+  color: gray;
+}
+main .topContent .featuredArticle .featuredArticleBottom .featuredArticleRight button {
+  margin-top: 30px;
+  padding: 0;
+  border: none;
+  background-color: hsl(5, 85%, 63%);
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+}
+main .topContent .featuredArticle .featuredArticleBottom .featuredArticleRight button:hover {
+  background-color: black;
+}
+main .topContent aside {
+  margin-top: 30px;
+  width: 450px;
+  height: 450px;
+  background-color: hsl(240, 100%, 5%);
+  display: flex;
+  flex-direction: column;
+}
+main .topContent aside .asidePicture {
+  background-color: inherit;
+}
+main .topContent aside .asidePicture img {
+  width: 150px;
+  border-radius: 50%;
+  object-fit: fill;
+  background-color: inherit;
+}
+main .topContent aside .asideDesc {
+  background-color: inherit;
+}
+main .topContent aside .asideDesc h2 {
+  background-color: inherit;
+  font-size: 23px;
+  color: white;
+}
+main .topContent aside .asideDesc p {
+  line-height: 2;
+  background-color: inherit;
+  color: white;
+  text-align: justify;
+}
+main .topContent aside .asideDesc p a {
+  background-color: inherit;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+main .topContent aside .asideDesc p a:hover {
+  color: hsl(35, 77%, 62%);
+}
+main h2 {
+  font-weight: 900;
+  font-size: 30px;
+}
+main #trendingArticle {
+  display: flex;
+  position: relative;
+  top: -10px;
+}
+main #trendingArticle .trendingContent {
+  display: flex;
+  border: 2px solid hsl(233, 8%, 79%);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+main #trendingArticle .trendingContent .trendingContentPic {
+  width: 190px;
+  height: 250px;
+  object-fit: cover;
+  position: relative;
+  z-index: 10;
+}
+main #trendingArticle .trendingContent .trendingContentDesc {
+  position: relative;
+  left: -10px;
+  z-index: 2;
+}
+main #trendingArticle .trendingContent .trendingContentDesc .articleNumber {
+  color: hsl(233, 8%, 79%);
+  font-weight: 700;
+  font-size: 30px;
+}
+main #trendingArticle .trendingContent .trendingContentDesc .articleTitle {
+  position: inherit;
+  top: -10px;
+  z-index: 1;
+  font-weight: 900;
+  font-size: 18px;
+  width: 200px;
+  line-height: 1.5;
+}
+main #trendingArticle .trendingContent .trendingContentDesc .articleDesc {
+  position: inherit;
+  top: -20px;
+  z-index: 0;
+  line-height: 1.5;
+  word-spacing: 1.5px;
+}
+main #trendingArticle .trendingContent:hover {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 11px 0px hsl(236, 13%, 42%);
+  box-shadow: 0px 2px 11px 0px hsl(236, 13%, 42%);
+  background-color: #dcedfb;
+}
+main #trendingArticle .trendingContent:hover .trendingContentPic {
+  background-color: inherit;
+}
+main #trendingArticle .trendingContent:hover .trendingContentDesc {
+  background-color: inherit;
+}
+main #trendingArticle .trendingContent:hover .trendingContentDesc .articleNumber {
+  background-color: inherit;
+}
+main #trendingArticle .trendingContent:hover .trendingContentDesc .articleTitle {
+  color: hsl(5, 85%, 63%);
+  background-color: inherit;
+}
+main #trendingArticle .trendingContent:hover .trendingContentDesc .articleDesc {
+  background-color: inherit;
+}
+main #newArticle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -10px;
+}
+main #newArticle .newContent {
+  display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+main #newArticle .newContent .newContentImg {
+  width: 300px;
+  object-fit: cover;
+}
+main #newArticle .newContent .newContentDesc {
+  position: relative;
+  left: -10px;
+  z-index: 2;
+}
+main #newArticle .newContent .newContentDesc .articleTitle {
+  position: inherit;
+  top: -10px;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 18px;
+  width: 300px;
+  line-height: 1.5;
+}
+main #newArticle .newContent .newContentDesc .articleDesc {
+  position: inherit;
+  top: -30px;
+  z-index: 0;
+  line-height: 1.5;
+  word-spacing: 1.5px;
+}
+main #newArticle .newContent:hover {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 11px 0px hsl(236, 7%, 48%);
+  box-shadow: 0px 2px 11px 0px hsl(236, 7%, 48%);
+  background-color: hsl(240, 100%, 98%);
+}
+main #newArticle .newContent:hover .newContentImg {
+  background-color: inherit;
+}
+main #newArticle .newContent:hover .newContentDesc {
+  background-color: inherit;
+}
+main #newArticle .newContent:hover .newContentDesc .articleNumber {
+  background-color: inherit;
+}
+main #newArticle .newContent:hover .newContentDesc .articleTitle {
+  color: hsl(5, 85%, 63%);
+  background-color: inherit;
+}
+main #newArticle .newContent:hover .newContentDesc .articleDesc {
+  background-color: inherit;
+}
+
+footer {
+  width: 100vw;
+  position: relative;
+  top: 1000px;
+  background-color: hsl(240, 100%, 5%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+footer .footerUpper {
+  background-color: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footerUpper span {
+  background-color: inherit;
+  color: white;
+  text-align: center;
+  margin: 5px 10px;
+}
+footer .footerBottom {
+  background-color: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footerBottom nav {
+  background-color: inherit;
+}
+footer .footerBottom nav a {
+  background-color: inherit;
+  color: white;
+  text-decoration: none;
+}
+footer .footerBottom nav a:hover {
+  color: hsl(5, 85%, 63%);
+}
+footer .footerBottom span {
+  background-color: inherit;
+  color: white;
+}
